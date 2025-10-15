@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cooper's Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <a class="brand"><div class="logo">CPR</div><div><strong>Cooper</strong><div style="font-size:12px;color:var(--muted)">FullStack • Software Developer</div></div></a>
+      <nav>
+        <footer>© <span id="year"></span> Cooper's Portfolio</footer>
+      </nav>
+    </header>
+
+    <section class="hero fade-section">
+      <div class="hero-left">
+        <h1>Hello I am Cooper</h1>
+        <p class="lead">I am a fullstack web developer and I also code Discord Bots and Games. My favorite languages are HTML and CSS but I also like JavaScript.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects">Contact</a>
+        </div>
+      </div>
+      <div class="avatar fade-section"><img src="https://cdn.discordapp.com/avatars/1262336556966871101/d8403d50d5dcb20231e8cd1a6decea9d.webp?size=100" alt="portrait"></div>
+    </section>
+
+    <main>
+      <section class="card fade-section" id="projects">
+        <h2>Selected Projects</h2>
+        <p class="muted">Click a project to visit its live site.</p>
+        <div class="projects-grid" id="projectsGrid">
+          <a href="https://www.roblox.com/games/87175633513858/NEW-Data-Pets" target="_blank" class="project fade-section"><div class="thumb"><img src="https://tr.rbxcdn.com/180DAY-be33fd212dd5d9977d8372f6ca13df26/768/432/Image/Png/noFilter"></div><h3>Roblox Game</h3><p>This is my Pet Simulator game I made on Roblox.</p><div class="meta"><span class="tag">Lua</span><span class="muted">Visit →</span></div></a>
+        </div>
+      </section>
+
+      <aside class="card fade-section" id="about">
+        <h4>Skills</h4>
+        <div class="skills"><div class="skill">HTML</div><div class="skill">CSS</div><div class="skill">JavaScript</div><div class="skill">Lua</div><div class="skill">PHP</div></div>
+        <hr style="margin:18px 0;border:none;border-top:1px solid rgba(10,40,30,0.04)">
+        <h4>Coding Languages</h4>
+        <div class="lang-list" id="langList">
+          <div class="lang-item"><div class="lang-title"><span>HTML</span><span class="percent">100%</span></div><div class="progress"><div class="progress-bar" data-percent="100"></div></div></div>
+          <div class="lang-item"><div class="lang-title"><span>CSS</span><span class="percent">65%</span></div><div class="progress"><div class="progress-bar" data-percent="65"></div></div></div>
+          <div class="lang-item"><div class="lang-title"><span>JavaScript</span><span class="percent">10%</span></div><div class="progress"><div class="progress-bar" data-percent="10"></div></div></div>
+          <div class="lang-item"><div class="lang-title"><span>Lua</span><span class="percent">5%</span></div><div class="progress"><div class="progress-bar" data-percent="5"></div></div></div>
+          <div class="lang-item"><div class="lang-title"><span>PHP</span><span class="percent">0%</span></div><div class="progress"><div class="progress-bar" data-percent="0"></div></div></div>
+        </div>
+      </aside>
+    </main>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent=new Date().getFullYear();
+    const revealObserver=new IntersectionObserver((entries,obs)=>{entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');obs.unobserve(entry.target);}});},{threshold:0.15});
+    document.querySelectorAll('.fade-section').forEach(el=>revealObserver.observe(el));
+    const langContainer=document.getElementById('langList');
+    const progObserver=new IntersectionObserver((entries,obs)=>{entries.forEach(entry=>{if(entry.isIntersecting){const bars=entry.target.querySelectorAll('.progress-bar');bars.forEach(bar=>{const pct=bar.getAttribute('data-percent')||'0';setTimeout(()=>{bar.style.width=pct+'%';},120);});obs.unobserve(entry.target);}});},{threshold:0.2});
+    if(langContainer)progObserver.observe(langContainer);
+    const mq=window.matchMedia('(prefers-reduced-motion: reduce)');
+    if(mq&&mq.matches){document.querySelectorAll('.progress-bar').forEach(b=>b.style.transition='none');document.querySelectorAll('.fade-section').forEach(f=>{f.style.transition='none';f.classList.add('visible');});}
+  </script>
+</body>
+</html>
