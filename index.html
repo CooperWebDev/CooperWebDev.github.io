@@ -1,66 +1,177 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Cooper's Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap">
 </head>
 <body>
-  <div class="container">
+    
     <header>
-      <a class="brand"><div class="logo">CPR</div><div><strong>Cooper</strong><div style="font-size:12px;color:var(--muted)">FullStack • Software Developer</div></div></a>
-      <nav>
-        <footer>© <span id="year"></span> Cooper's Portfolio</footer>
-      </nav>
+        <nav>
+            <div>
+                <a href="#Home">Cooper</a>
+            </div>
+            <div class="Section-Btns">
+                <a href="#About">About</a>
+                <a href="#Skills">Skills</a>
+                <a href="#Projects">Projects</a>
+                <a href="#Contact">Contact</a>
+            </div>
+        </nav>
     </header>
 
-    <section class="hero fade-section">
-      <div class="hero-left">
-        <h1>Hello I am Cooper</h1>
-        <p class="lead">I am a fullstack web developer and I also code Discord Bots and Games. My favorite languages are HTML and CSS but I also like JavaScript.</p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#projects">Contact</a>
-        </div>
-      </div>
-      <div class="avatar fade-section"><img src="https://cdn.discordapp.com/avatars/1262336556966871101/d8403d50d5dcb20231e8cd1a6decea9d.webp?size=100" alt="portrait"></div>
-    </section>
-
     <main>
-      <section class="card fade-section" id="projects">
-        <h2>Selected Projects</h2>
-        <p class="muted">Click a project to visit its live site.</p>
-        <div class="projects-grid" id="projectsGrid">
-          <a href="https://www.roblox.com/games/87175633513858/NEW-Data-Pets" target="_blank" class="project fade-section"><div class="thumb"><img src="https://tr.rbxcdn.com/180DAY-be33fd212dd5d9977d8372f6ca13df26/768/432/Image/Png/noFilter"></div><h3>Roblox Game</h3><p>This is my Pet Simulator game I made on Roblox.</p><div class="meta"><span class="tag">Lua</span><span class="muted">Visit →</span></div></a>
-        </div>
-      </section>
-
-      <aside class="card fade-section" id="about">
-        <h4>Skills</h4>
-        <div class="skills"><div class="skill">HTML</div><div class="skill">CSS</div><div class="skill">JavaScript</div><div class="skill">Lua</div><div class="skill">PHP</div></div>
-        <hr style="margin:18px 0;border:none;border-top:1px solid rgba(10,40,30,0.04)">
-        <h4>Coding Languages</h4>
-        <div class="lang-list" id="langList">
-          <div class="lang-item"><div class="lang-title"><span>HTML</span><span class="percent">100%</span></div><div class="progress"><div class="progress-bar" data-percent="100"></div></div></div>
-          <div class="lang-item"><div class="lang-title"><span>CSS</span><span class="percent">65%</span></div><div class="progress"><div class="progress-bar" data-percent="65"></div></div></div>
-          <div class="lang-item"><div class="lang-title"><span>JavaScript</span><span class="percent">10%</span></div><div class="progress"><div class="progress-bar" data-percent="10"></div></div></div>
-          <div class="lang-item"><div class="lang-title"><span>Lua</span><span class="percent">5%</span></div><div class="progress"><div class="progress-bar" data-percent="5"></div></div></div>
-          <div class="lang-item"><div class="lang-title"><span>PHP</span><span class="percent">0%</span></div><div class="progress"><div class="progress-bar" data-percent="0"></div></div></div>
-        </div>
-      </aside>
+        <section class="About-Info" id="Home">
+            <h1>Hello, I'm Cooper!</h1>
+            <h2 class="Color-Green">Frontend Developer</h2>
+            <p>At the moment I am a frontend developer that is still learning a lot of things. I am on my way to becoming a full stack developer and trying to learn more skills.</p>
+        </section>
+        <section class="Button-Part">
+            <a href="#About">More</a>
+            <a href="#Contact">Contact</a>
+        </section>
+        <section class="Img-Part">
+            <div class="Left-Line"></div>
+            <img src="https://i.pinimg.com/736x/4c/54/e8/4c54e8dd8d00e0dd4205e810058c3cb6.jpg">
+            <div class="Right-Line"></div>
+        </section>
+        <section id="About" class="About-Part">
+            <h1 class="Margin-Bottom">The <span class="Color-Green">Things</span> I Do!</h1>
+            <div class="About-Part-Container">
+            <div class="Left-About-Part">
+                <h2>Work</h2>
+                <div class="Border-Left">
+                <div class="Card">
+                    <h2>My <span class="Color-Green">Work</span></h2>
+                    <p>I do software development as work obviously but my goal is to learn as much languages as possible.</p>
+                </div>
+                <div class="Card">
+                    <h2>My <span class="Color-Green">Excitement</span></h2>
+                    <p>I am way to excited for projects. Every time I end up quiting the project to fast because I want to start a new project.</p>
+                </div>
+                <div class="Card">
+                    <h2>My <span class="Color-Green">Skills</span></h2>
+                    <p>I do not have a lot of skills right now but I try to learn as much as possible.</p>
+                </div>
+                </div>
+            </div>
+            <div class="Middle-About-Part">
+                <h2>Wish</h2>
+                <div class="Border-Left">
+                <div class="Card">
+                    <h2>My <span class="Color-Green">Wish</span></h2>
+                    <p>I always wanted to work in a good and fun team but that has yet to happen.</p>
+                </div>
+                <div class="Card">
+                    <h2>My <span class="Color-Green">Goal</span></h2>
+                    <p>I eventually want to end up at a good company where I can enjoy my work.</p>
+                </div>
+                <div class="Card">
+                    <h2>My <span class="Color-Green">Dream</span></h2>
+                    <p>I really want a big website that loads of people use.</p>
+                </div>
+                </div>
+            </div>
+            <div class="Right-About-Part">
+                 <h2>Life</h2>
+                 <div class="Border-Left">
+                <div class="Card">
+                    <h2>My <span class="Color-Green">Life</span></h2>
+                    <p>I try to sport as much as possible and I also spend my time with friends.</p>
+                </div>
+                <div class="Card">
+                    <h2>My <span class="Color-Green">Games</span></h2>
+                    <p>I like to play games in my free time such as Rocket League and I enjoy the chatting with friends.</p>
+                </div>
+                <div class="Card">
+                    <h2>My <span class="Color-Green">Creativity</span></h2>
+                    <p>I also like to be creative, such as drawing and much more.</p>
+                </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section id="Skills" class="Skills-Part">
+            <div class="Big-Card">
+                <h1 class="Margin-Bottom Margin-Top">The <span class="Color-Green">Skills</span> I Got!</h1>
+                <div class="Bar-Container">
+                    <i class="fab fa-brands fa-html5 Code-Icon"></i>
+                    <div class="Bar">
+                        <div class="Progress" style="width:100%;"><p class="Progress-Text">100%</p></div>
+                    </div>
+                </div>
+                <div class="Bar-Container">
+                    <i class="fab fa-brands fa-css3-alt Code-Icon"></i>
+                    <div class="Bar">
+                        <div class="Progress" style="width:70%;"><p class="Progress-Text">50%</p></div>
+                    </div>
+                </div>
+                <div class="Bar-Container">
+                    <i class="fab fa-brands fa-js Code-Icon"></i>
+                    <div class="Bar">
+                        <div class="Progress" style="width:5%;"></div>
+                    </div>
+                </div>
+                <div class="Bar-Container">
+                    <i class="fab fa-brands fa-python Code-Icon"></i>
+                    <div class="Bar">
+                        <div class="Progress" style="width:0%;"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="Projects" class="Projects-Part" id="Projects">
+            <div class="Project-Container">
+                <h1 class="Margin-Bottom Margin-Top">The <span class="Color-Green">Projects</span> I Made!</h1>
+                <div class="Project-Box">
+                    <div class="Project-Card Left-Border-Mobile">
+                        <h2 class="Card-Title">My <span class="Color-Green">HTML/CSS</span> Projects</h2>
+                        <p>These are all my favorite HTML and CSS websites.</p>
+                        <ul class="Link-Container">
+                            <li class="Small-Link-Container"><i class="fas fa-solid fa-arrow-right Arrow-Right"></i><a href="#" class="Project-Link">Not Made Yet</a></li>
+                        </ul>
+                    </div>
+                    <div class="Project-Card Right-Border-Mobile">
+                        <h2 class="Card-Title">My <span class="Color-Green">Javascript</span> Projects</h2>
+                        <p>These are all my favorite Javascript websites.</p>
+                        <ul class="Link-Container">
+                            <li class="Small-Link-Container"><i class="fas fa-solid fa-arrow-right Arrow-Right"></i><a href="https://faqzy-esports.github.io/" class="Project-Link">Faqzy Esports</a></li>
+                        </ul>
+                    </div>
+                    <div class="Project-Card Left-Border-Mobile">
+                        <h2 class="Card-Title">My <span class="Color-Green">Python</span> Projects</h2>
+                        <p>These are all my favorite Python websites.</p>
+                        <ul class="Link-Container">
+                            <li class="Small-Link-Container"><i class="fas fa-solid fa-arrow-right Arrow-Right"></i><a href="#" class="Project-Link">Not Made Yet</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="Contact" class="Contact-Part">
+            <div class="Contact-Container">
+                <h1 class="Margin-Top Small-Margin-Bottom">The <span class="Color-Green">Socials</span> I Have!</h1>
+                <p>Contact me through one of these socials if you want to stay in touch with me.</p>
+                <div class="Footer-Buttons">
+                    <div class="Social-Buttons">
+                        <a href="#"><i class="fab fa-brands fa-discord"></i></a>
+                        <a href="https://www.youtube.com/@OnlyCoopyClips"><i class="fab fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-  </div>
 
-  <script>
-    document.getElementById('year').textContent=new Date().getFullYear();
-    const revealObserver=new IntersectionObserver((entries,obs)=>{entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');obs.unobserve(entry.target);}});},{threshold:0.15});
-    document.querySelectorAll('.fade-section').forEach(el=>revealObserver.observe(el));
-    const langContainer=document.getElementById('langList');
-    const progObserver=new IntersectionObserver((entries,obs)=>{entries.forEach(entry=>{if(entry.isIntersecting){const bars=entry.target.querySelectorAll('.progress-bar');bars.forEach(bar=>{const pct=bar.getAttribute('data-percent')||'0';setTimeout(()=>{bar.style.width=pct+'%';},120);});obs.unobserve(entry.target);}});},{threshold:0.2});
-    if(langContainer)progObserver.observe(langContainer);
-    const mq=window.matchMedia('(prefers-reduced-motion: reduce)');
-    if(mq&&mq.matches){document.querySelectorAll('.progress-bar').forEach(b=>b.style.transition='none');document.querySelectorAll('.fade-section').forEach(f=>{f.style.transition='none';f.classList.add('visible');});}
-  </script>
+    <footer>
+        <div class="Footer-Text">
+            <p>This website has been made for personal use but is ofcourse public for people that are interested. I hope you learned more about me and if you have questions then you can always contact me.</p>
+            <p><i class="fas fa-solid fa-copyright"></i> The Portfolio Website Of Cooper</p>
+        </div>
+    </footer>
+
 </body>
 </html>

@@ -1,0 +1,417 @@
+:root {
+    --black: #0b0c10;
+    --green: #2ecc71;
+    --darkgreen: #228f4f;
+    --white: #ffffff;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--black);
+    color: var(--white);
+    font-family: 'Bubblegum Sans', cursive;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #0b0c10;
+    padding: 15px 30px;
+}
+
+nav a {
+    margin: 20px 50px;
+    font-size: 30px;
+    text-decoration: none;
+    color: var(--white);
+}
+
+nav a:hover {
+    color: var(--green);
+}
+
+.About-Info {
+    text-align: center;
+    margin: 80px 20px 20px 20px;
+    line-height: 1.5;
+}
+
+h1 {
+    font-size: 70px;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+p {
+    font-size: 25px;
+}
+
+.Color-Green {
+    color: var(--green);
+}
+
+.Button-Part {
+    display: flex;
+    justify-content: center;
+}
+
+.Button-Part a {
+    padding: 16px 26px;
+    background: transparent;
+    border: 5px solid var(--green);
+    border-radius: 12px;
+    color: var(--green);
+    font-family: 'Bubblegum Sans', cursive;
+    font-size: 20px;
+    transition: 0.5s;
+    margin: 10px 15px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.Button-Part a:hover {
+    background-color: var(--darkgreen);
+    color: var(--white);
+}
+
+.Img-Part {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Img-Part img {
+    margin: 80px 0;
+    width: 300px;
+    height: auto;
+    border: 5px solid var(--green);
+    border-radius: 50%;
+}
+
+.Left-Line {
+    height: 5px;
+    background-color: var(--green);
+    width: 40%;
+}
+
+.Right-Line {
+    height: 5px;
+    background-color: var(--green);
+    width: 40%;
+}
+
+.About-Part {
+    text-align: center;
+    margin: 0px 20px;
+}
+
+.About-Part-Container {
+    display: flex;
+    max-width: 1400px;
+    margin: 0 auto;
+    align-items: stretch;
+}
+
+.Border-Left {
+    border-left: 5px solid var(--green);
+    border-bottom: 5px solid var(--green);
+    flex: 1;
+}
+
+.Middle-About-Part, .Right-About-Part, .Left-About-Part {
+    display: flex;
+    justify-content: right;
+    text-align: left;
+    flex-direction: column;
+}
+
+.Left-About-Part > h2 {
+    border-bottom: 5px solid var(--green);
+    width: 110px;
+}
+
+.Right-About-Part > h2 {
+    border-bottom: 5px solid var(--green);
+    width: 85px;
+}
+
+.Middle-About-Part > h2 {
+    border-bottom: 5px solid var(--green);
+    width: 100px;
+}
+
+.Card {
+    text-align: center;
+    margin: 0 20px 20px 20px;
+    padding: 20px;
+    border-left: 5px solid var(--green);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    border-top: 5px solid var(--green);
+}
+
+.Footer-Text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    text-align: center;
+    width: 1200px;
+}
+
+.Footer-Text p {
+    margin: 10px;
+}
+
+.Social-Buttons {
+    display: flex;
+}
+
+.Social-Buttons a {
+    border: 5px solid var(--green);
+    background: transparent;
+    color: var(--green);
+    font-family: 'Bubblegum Sans', cursive;
+    padding: 20px;
+    font-size: 30px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 40px 20px;
+    cursor: pointer;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+.Footer-Buttons a:hover {
+    background-color: var(--darkgreen);
+    color: var(--white);
+}
+
+.Skills-Part {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Big-Card {
+    margin: 0 20px;
+    width: 1276px;
+    border-right: 5px solid var(--green);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+}
+
+.Code-Icon {
+    font-size: 50px;
+    color: var(--white);
+    border-right: 5px solid var(--green);
+    padding: 20px;
+}
+
+.Margin-Bottom {
+    margin-bottom: 80px;
+}
+
+.Small-Margin-Bottom {
+    margin-bottom: 10px;
+}
+
+.Margin-Top {
+    margin-top: 80px;
+}
+
+.Bar {
+    border-right: 5px solid var(--green);
+    border-top: 5px solid var(--green);
+    border-bottom: 5px solid var(--green);
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+    height: 40px;
+    width: 1000px;
+}
+
+.Bar-Container {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+
+.Progress {
+    background-color: var(--darkgreen);
+    height: 100%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.Progress-Text {
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    padding: 5px 0;
+    width: 100%;
+}
+
+.Project-Link {
+    color: var(--green);
+    font-size: 25px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+.Project-Link:hover {
+    color: var(--darkgreen);
+}
+
+.Arrow-Right {
+    color: var(--white);
+    margin: 0 10px 0 70px;
+}
+
+.Small-Link-Container {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 20px;
+}
+
+.Projects-Part {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Project-Container {
+    width: 1400px;
+    border-left: 5px solid var(--green);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Project-Card {
+    width: 30%;
+    text-align: center;
+    border-bottom: 5px solid var(--green);
+    padding: 45px
+}
+
+.Card-Title {
+    margin: 0 0 20px 0;
+}
+
+.Project-Box {
+    display: flex;
+}
+
+.Contact-Part {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Contact-Container {
+    width: 1400px;
+    border-right: 5px solid var(--green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 800px){
+    .About-Part-Container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .Left-About-Part,
+    .Middle-About-Part,
+    .Right-About-Part {
+        margin-bottom: 50px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        height: 150px;
+    }
+
+    nav a {
+        margin: 20px 10px;
+    }
+
+    .Section-Btns {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .Big-Card {
+        text-align: center;
+        border-right: none;
+        padding: 0;
+    }
+
+    .Bar-Container {
+        margin: 10px 0;
+    }
+
+    .Bar {
+        height: 40px;
+        max-width: 200px;
+    }
+
+    .Project-Box {
+        flex-direction: column;
+    }
+
+    .Project-Container {
+        width: 300px;
+        text-align: center;
+        border-left: none;
+    }
+
+    .Project-Card {
+        width: 250px;
+        border-bottom: none;
+    }
+
+    .Left-Border-Mobile {
+        border-left: 5px solid var(--green);
+    }
+
+    .Right-Border-Mobile {
+        border-right: 5px solid var(--green);
+    }
+
+    .Arrow-Right {
+        margin-left: 5px;
+    }
+
+    .Contact-Container {
+        width: 250px;
+        text-align: center;
+        border-right: none;
+    }
+}
